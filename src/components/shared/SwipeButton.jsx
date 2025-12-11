@@ -65,6 +65,18 @@ export const SwipeButton = ({
   return (
     <div className="sliding-bar-container">
       <div className="sliding-bar-track">
+        {/* Barra de relleno que termina justo donde empieza el borde derecho del botón */}
+        {position > 0 && (
+          <div
+            className="sliding-bar-fill"
+            style={{
+              left: "4px",
+              width: `${position + 4 + 56}px`, // position + left offset (4px) + ancho completo del botón (56px)
+              transition: isDragging ? "none" : "width 0.3s ease-out",
+            }}
+          />
+        )}
+
         <div className="sliding-bar-text">
           <span>{text}</span>
         </div>
@@ -76,7 +88,7 @@ export const SwipeButton = ({
           style={{
             transform: `translateX(${position}px) translateY(-50%)`,
             transition: isDragging ? "none" : "transform 0.3s ease-out",
-            cursor: disabled ? "not-allowed" : "grab", // ⬅️ Cambia el cursor
+            cursor: disabled ? "not-allowed" : isDragging ? "grabbing" : "grab",
           }}
           onMouseDown={handleMouseDown}
           onTouchStart={handleTouchStart}

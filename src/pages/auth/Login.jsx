@@ -2,7 +2,7 @@ import { useState } from "react";
 import { LogoChaskys } from "../../components/shared/LogoChaskys";
 import { Link, useNavigate } from "react-router-dom";
 import { Icon } from "@iconify/react";
-import "../../styles/auth/login.css";
+import "../../styles/auth/Login.css";
 
 export const Login = () => {
   const [user, setUser] = useState("");
