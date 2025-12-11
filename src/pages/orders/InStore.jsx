@@ -8,7 +8,7 @@ import { StoreAddress } from "../../components/orders/storeAddress";
 import { Support } from "../../components/shared/support";
 import { useDriver } from "../../context/DriverContext";
 
-import "../../styles/orders/instore.css";
+import "../../styles/orders/InStore.css";
 
 export const InStore = () => {
   const navigate = useNavigate();
