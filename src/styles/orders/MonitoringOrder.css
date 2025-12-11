@@ -1,9 +1,3 @@
-/* .monitoring {
-  min-height: calc(100vh - 180px);
-  position: relative;
-  padding-bottom: 100px;
-} */
-
 .mapboxgl-map {
   display: flex;
   margin-bottom: 27px;
