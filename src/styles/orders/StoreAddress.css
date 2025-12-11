@@ -1,0 +1,25 @@
+.store-address-container {
+  width: 100%;
+}
+.store-address {
+  display: flex;
+  gap: 10px;
+  width: 90%;
+  color: #000;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.name-icon {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+.store-name {
+  font-size: 21px;
+}
+
+.store-address .store-information {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

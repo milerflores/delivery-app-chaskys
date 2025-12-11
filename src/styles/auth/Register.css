@@ -1,0 +1,116 @@
+.form-register {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-body {
+  display: grid;
+  align-items: center;
+  gap: 14px;
+  margin: 40px 40px 20px 40px;
+}
+
+.form-body input {
+  height: 55px;
+  border-radius: 16px;
+  padding-left: 15px;
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accion-register {
+  height: 180px;
+  border-radius: 60px 60px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  padding-top: 32px;
+  padding-bottom: 50px;
+}
+
+/* CONTENEDOR PARA TEXTO + BOTÓN EN LÍNEA */
+.login-container {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacio entre texto y enlace */
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.accion-register span {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 200;
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+.accion-register .btn-siguiente {
+  background-color: #bbb6ff;
+  color: #000000;
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  border-radius: 16px;
+  width: 80vw;
+  max-width: 400px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: none;
+}
+
+.btn-siguiente::after {
+  content: "→";
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-volver-inicio-sesion {
+  color: #3191e4;
+  text-decoration: underline;
+  font-family: "Itim", cursive;
+  font-size: 25px; /* Mismo tamaño que el texto */
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline; /* Para que esté en línea */
+}
+
+.login-link {
+  font-family: "Itim", cursive;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link-text {
+  color: #3191e4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link-text:hover {
+  text-decoration: underline;
+  color: #3191e4;
+}
+
+.btn-siguiente:hover,
+.btn-siguiente:active,
+.btn-siguiente:focus {
+  color: #000000;
+  transform: none;
+  box-shadow: none;
+  opacity: 1;
+  outline: none;
+}

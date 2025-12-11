@@ -1,0 +1,76 @@
+/* .monitoring {
+  min-height: calc(100vh - 180px);
+  position: relative;
+  padding-bottom: 100px;
+} */
+
+.mapboxgl-map {
+  display: flex;
+  margin-bottom: 27px;
+}
+.mapboxgl-control-container {
+  display: none !important;
+}
+
+.btn-cancel {
+  background-color: #ef929b;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 20px;
+  min-width: 120px;
+  font-family: "Itim", cursive;
+}
+.section-btn-accept {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.btn-accept-order {
+  background-color: #33027d;
+  color: #fff;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 20px;
+  min-width: 120px;
+  font-family: "Itim", cursive;
+  width: 90%;
+}
+.section-btn-cancel {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.btn-cancel-order {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.loagin-accept {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Itim", cursive;
+  font-size: 20px;
+}
+
+.btn-cancel-loading {
+  padding: 12px 20px;
+  background: #ff3b30;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+  width: 70%;
+  position: absolute;
+  bottom: 40px;
+  font-weight: 700;
+}

@@ -1,0 +1,8 @@
+.section-support {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-right: 20px;
+  margin-top: 30px;
+  width: 100%;
+}

@@ -1,0 +1,142 @@
+.map-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-modal-container {
+  width: 90%;
+  height: 80%;
+  position: relative;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10000;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.map-modal-close:hover {
+  background: #f0f0f0;
+}
+
+.map-modal-map {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.map-modal-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 20px 20px 0 0;
+  padding: 24px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+}
+
+.map-modal-store {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.store-icon {
+  color: #6366f1;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.store-details {
+  flex: 1;
+}
+
+.store-details h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.store-details p {
+  margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.map-modal-eta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eta-time {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eta-minutes {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.eta-arrival {
+  text-align: right;
+}
+
+.eta-arrival span {
+  font-size: 14px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .map-modal-info {
+    padding: 20px;
+  }
+
+  .eta-minutes {
+    font-size: 20px;
+  }
+
+  .store-details h3 {
+    font-size: 15px;
+  }
+
+  .store-details p {
+    font-size: 13px;
+  }
+}

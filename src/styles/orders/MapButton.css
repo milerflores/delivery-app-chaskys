@@ -1,0 +1,17 @@
+.map-button-container {
+  width: 80%;
+  margin: 15px auto;
+}
+.map-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  background-color: #33027d;
+  color: white;
+  border: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 11px 10px;
+  border-radius: 8px;
+}

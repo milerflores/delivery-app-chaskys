@@ -1,0 +1,178 @@
+.card {
+  background-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  /* border: 2px #000 solid; */
+  padding: 19px 24px 10px 24px;
+}
+
+.hader-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.header-user-category {
+  font-size: 24px;
+}
+
+.header-user-name {
+  font-size: 32px;
+}
+
+.header-logo-name {
+  font-size: 48px;
+}
+
+.header-logo-subname {
+  font-size: 24px;
+}
+
+.header-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 17px 16px;
+  color: #fff;
+  font-family: "Itim", cursive;
+}
+
+.color-orange {
+  color: #ffd27d;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profit-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-family: "Itim", cursive;
+  margin-top: 30px;
+}
+
+.profit-home-title {
+  font-size: 24px;
+}
+
+.profit-home-summary {
+  font-size: 64px;
+}
+
+.record-home {
+  width: 80%;
+  font-family: "Itim", cursive;
+  margin-top: 35px;
+  font-size: 24px;
+  padding: 15px 20px;
+  background-color: #512494;
+  color: white;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+
+.record-home {
+  font-size: 22px;
+}
+
+.record-summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.record-view-history {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.record-view-history span {
+  background-color: #6c3fae;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px -0.1px 0px rgba(0, 0, 0, 0.25),
+    0px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.order-home {
+  margin-top: 35px;
+  font-family: "Itim", cursive;
+}
+
+/* .order-home-title {
+  display: flex;
+  justify-content: center;
+  
+} */
+
+.order-home-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.order-home-title span:last-child {
+  font-size: 19px;
+  margin-top: 6px;
+}
+
+.card-order {
+  background-color: #dfdfdf;
+  border-radius: 16px;
+  padding: 7px 14px;
+  margin-bottom: 15px;
+  font-family: "Itim", cursive;
+}
+
+.card-order.active {
+  background-color: #ffde84;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.tarjeta-efectivo {
+  display: flex;
+  gap: 5px;
+}
+
+.card-order-name-summary {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.card-order-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+  color: #5b5b5b;
+}
+
+.record-view-orders {
+  display: flex;
+  justify-content: center;
+  gap: 0.3em;
+  margin-bottom: 10px;
+}
+
+.monitoring-card {
+  background-color: #ffde84;
+}
+.subtitle-orders {
+  color: #33027d;
+}

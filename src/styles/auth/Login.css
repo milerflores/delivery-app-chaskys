@@ -1,0 +1,167 @@
+/* CSS CORREGIDO - INPUTS FIJOS SIN SCROLL */
+
+.inputs-form {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 25px 25px 25px; /* Espacios uniformes */
+  width: calc(100% - 50px); /* Ancho completo menos márgenes */
+  max-width: 380px; /* Límite máximo */
+  position: static; /* Sin posición fija para evitar superposición */
+}
+
+input {
+  height: 55px;
+  border-radius: 16px;
+  padding-left: 60px;
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  background-color: white;
+}
+
+.accion-login {
+  background-color: #ffffff;
+  height: 320px; /* Altura fija */
+  border-radius: 60px 60px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding-top: 40px;
+  margin-top: auto; /* Empuja la caja hacia abajo */
+  position: relative; /* Sin fixed ni absolute */
+}
+
+.input-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-icon span {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #9a9a9a;
+}
+
+.accion-login > span {
+  font-family: "Itim", cursive;
+  color: #636363;
+  font-size: 24px;
+  margin: 15px 0px; /* Más espacio */
+}
+
+.forgot-password {
+  margin: 20px 0px; /* Espacio ajustado */
+  font-size: 24px;
+}
+
+.btn {
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  border-radius: 16px;
+  width: 85vw; /* Ancho relativo */
+  max-width: 350px; /* Límite máximo */
+  height: 55px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-login {
+  background-color: #33027d;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.btn-create-account {
+  display: flex;
+  align-items: center;
+  background-color: #bbb6ff;
+  color: #000;
+  text-decoration: none;
+  justify-content: center;
+}
+
+/* CONTENEDOR PRINCIPAL - SIN SCROLL */
+.login-page {
+  min-height: 932px; /* Altura exacta iPhone 14 Pro Max */
+  height: 932px; /* Fija la altura */
+  width: 100%;
+  max-width: 430px; /* Ancho exacto iPhone */
+  margin: 0 auto;
+  background-color: #33027d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden; /* Elimina scroll */
+  position: relative;
+}
+
+/* FORMULARIO - AJUSTE DE ALTURA */
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Ocupa espacio disponible */
+}
+
+/* Ajustes específicos para iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .login-page {
+    height: 932px; /* Mantiene altura fija */
+    min-height: 932px;
+  }
+
+  .inputs-form {
+    margin: 35px 20px 20px 20px;
+    width: calc(100% - 40px);
+    gap: 12px;
+  }
+
+  input {
+    height: 50px;
+    font-size: 22px;
+    padding-left: 55px;
+  }
+
+  .input-icon span {
+    top: 13px;
+    left: 18px;
+  }
+
+  .accion-login {
+    height: 300px;
+    border-radius: 50px 50px 0 0;
+    padding-top: 35px;
+  }
+
+  .btn {
+    width: 90vw;
+    max-width: 340px;
+    font-size: 22px;
+    height: 50px;
+  }
+
+  .forgot-password {
+    font-size: 22px;
+  }
+
+  .accion-login > span {
+    font-size: 22px;
+  }
+}
+
+/* Ajuste para evitar superposición */
+@media (max-height: 932px) {
+  .login-page {
+    height: auto;
+    min-height: 100vh;
+  }
+}

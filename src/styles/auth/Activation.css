@@ -1,0 +1,558 @@
+body {
+  background-color: #33027d;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Itim", cursive;
+  /* VUELVE AL 100% Y MAX-WIDTH EN MEDIA QUERY */
+  width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  /* CLAVE: box-sizing universal para evitar desbordamiento por padding */
+  box-sizing: border-box;
+}
+
+.activation-container {
+  padding-top: 40px;
+}
+
+.activation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px;
+}
+
+.activation-main-title {
+  color: #c8a758;
+  font-family: "Itim", cursive;
+  font-size: 48px;
+  margin: 0;
+  text-align: center;
+}
+
+.activation-subtitle {
+  font-size: 28px;
+  font-family: "Itim", cursive;
+  color: #ffffff;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+#activation {
+  display: flex;
+  flex-direction: column;
+}
+
+.activation-form {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 200px);
+}
+
+.activation-body {
+  flex: 1;
+  /* AJUSTE: Reducido a 20px de padding para dar más margen horizontal en 430px */
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activation-body .email {
+  margin-bottom: 60px;
+}
+
+.envelope-icon {
+  margin: 50px 0 30px 0;
+  color: #f0ba39;
+  background-color: #512494;
+  border-radius: 10px;
+  padding: 2px 5px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.activation-title {
+  font-family: "Itim", cursive;
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+}
+
+.activation-instructions {
+  font-family: "Itim", cursive;
+  font-size: 20px;
+  color: #ffffff;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  max-width: 380px;
+  width: 80%;
+}
+
+.email {
+  font-family: "Itim", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  color: #f0ba39;
+  margin: 0 0 40px 0;
+  word-break: break-all;
+}
+
+.code-inputs {
+  display: flex;
+  justify-content: center;
+  /* AJUSTE: Reducido de 15px a 10px */
+  gap: 10px;
+  margin: 10px 0 30px;
+  /* CLAVE: Añadir box-sizing por si acaso el input no lo hereda */
+  box-sizing: border-box;
+}
+
+.code-input {
+  /* AJUSTE CLAVE: Reducido a 60px para garantizar que quepan en 430px (con 20px de padding) */
+  width: 60px;
+  height: 70px;
+  border-radius: 14px;
+  border: solid 2px #fff;
+  background: #33027d;
+  font-family: "Itim", cursive;
+  font-size: 30px;
+  text-align: center;
+  color: #fff !important;
+  font-weight: bold;
+  -webkit-text-fill-color: #fff !important;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.code-input:focus {
+  outline: 3px solid #f0ba39;
+  background: #33027d;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 186, 57, 0.3);
+}
+
+.accion-activation {
+  /* AJUSTE: Reducido padding horizontal de 25px a 20px */
+  padding: 30px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: auto;
+}
+
+.btn-activate {
+  font-family: "Itim", cursive;
+  font-size: 22px;
+  border-radius: 14px;
+  width: 100%;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-activate.disabled {
+  background-color: #534e8f !important;
+  color: #493b5e !important;
+  cursor: not-allowed;
+}
+
+.btn-activate.active {
+  background-color: #f59031 !important;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+.btn-activate.active:hover {
+  background-color: #e0842b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 144, 49, 0.3);
+}
+
+.resend-container {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.resend-text {
+  font-family: "Itim", cursive;
+  font-size: 18px;
+  color: #fff;
+}
+
+.resend-link {
+  background: none;
+  border: none;
+  color: #3191e4;
+  font-family: "Itim", cursive;
+  font-size: 18px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.sobre-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 10px rgba(145, 234, 178, 0.3));
+}
+
+.btn-activate:disabled {
+  opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #33027d inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+  border: solid 2px #fff !important;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.success-modal {
+  background: #fff;
+  border-radius: 35px;
+  padding: 35px 25px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  animation: slideUp 0.4s ease;
+  position: relative;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.success-icon {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  box-shadow: 0 10px 20px rgba(145, 234, 178, 0.3);
+  position: relative;
+}
+
+.check-image {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+  z-index: 2;
+  position: relative;
+}
+
+.check-image.colorized {
+  filter: brightness(0) invert(1);
+}
+
+.check-fallback {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.check-fallback path {
+  stroke: #33027d;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.checkmark {
+  font-size: 50px;
+  color: #33027d;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.modal-title {
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  line-height: 1.2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.welcome-text {
+  color: #000000;
+  font-weight: normal;
+}
+
+.chaskys-text {
+  color: #f59031;
+  font-weight: bold;
+}
+
+.exclamation {
+  color: #000000;
+  font-weight: normal;
+}
+
+.modal-title-alt {
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  color: #000000;
+  margin: 0 0 15px 0;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.modal-message {
+  font-family: "Itim", cursive;
+  font-size: 20px;
+  color: #5b5b5b;
+  margin: 0 0 30px 0;
+  line-height: 1.4;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.modal-submessage {
+  font-family: "Itim", cursive;
+  font-size: 18px;
+  color: #5b5b5b;
+  margin: 0 0 30px 0;
+  line-height: 1.4;
+}
+
+.success-modal .btn {
+  font-family: "Itim", cursive;
+  font-size: 22px;
+  border-radius: 14px;
+  width: 100%;
+  height: 52px;
+  border: none;
+  cursor: pointer;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.start-driving-btn {
+  background-color: #f59031 !important;
+  color: #ffffff !important;
+}
+
+.start-driving-btn:hover {
+  background-color: #e0842b !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(245, 144, 49, 0.3);
+}
+
+.secondary-btn {
+  background-color: #534e8f !important;
+  color: #493b5e !important;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background-color: #48437d !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(83, 78, 143, 0.3);
+}
+
+.modal-resend {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.modal-resend-text {
+  font-family: "Itim", cursive;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.modal-resend-link {
+  background: none;
+  border: none;
+  color: #f0ba39;
+  font-family: "Itim", cursive;
+  font-size: 16px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.modal-resend-link:hover {
+  color: #ffcc66;
+}
+
+.code-input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.code-input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.code-input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.code-input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.code-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.check-svg {
+  width: 50px;
+  height: 50px;
+}
+
+.check-svg-stroke path {
+  stroke: #33027d;
+  stroke-width: 3;
+}
+
+.check-svg-fill path {
+  fill: #33027d;
+}
+
+.check-image.monochrome {
+  filter: brightness(0) invert(26%) sepia(89%) saturate(749%) hue-rotate(87deg)
+    brightness(95%) contrast(101%);
+}
+
+.check-image.remove-white-bg {
+  mix-blend-mode: multiply;
+}
+
+/* ---------------------------------------------------------------------- */
+/* AJUSTES RESPONSIVE FINALES PARA IPHONE 14 PRO MAX (430px) */
+/* ---------------------------------------------------------------------- */
+
+/* La media query principal para el iPhone 14 Pro Max (430px) */
+@media (max-width: 430px) {
+  body {
+    max-width: 430px;
+    width: 100%;
+  }
+
+  /* Ajuste para que los inputs quepan sin desbordar el viewport */
+  .code-input {
+    /* Mantenido en 60px de la última corrección, para asegurar el margen. */
+    width: 60px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .code-inputs {
+    /* Mantenido en 10px de la última corrección. */
+    gap: 10px;
+  }
+}
+
+/* Media query para dispositivos más pequeños */
+@media (max-width: 390px) {
+  /* Si el dispositivo es más estrecho que 390px, se usa este ajuste */
+  .code-input {
+    width: 60px;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  .code-inputs {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .code-input {
+    width: 55px;
+    height: 65px;
+    font-size: 28px;
+  }
+
+  .code-inputs {
+    gap: 5px;
+  }
+}

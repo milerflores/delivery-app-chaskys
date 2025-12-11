@@ -1,0 +1,169 @@
+p,
+h1 {
+  font-family: "Itim", cursive;
+}
+
+.container-principal {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-centro {
+  border-radius: 25px;
+  background-color: #ffffff;
+  width: 350px;
+  height: 635px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.valoraclientetxt {
+  margin-bottom: 1px;
+}
+
+.opinion-txt {
+  font-size: 17px;
+  margin-top: 5px;
+}
+
+.cuadro-cliente {
+  background-color: #4d3178;
+  border-radius: 10px;
+  width: 280px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.img-cliente {
+  background-color: #bbb6ff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.nombre-cliente-txt {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.seccion-estrellas {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.miniconteiner-puntuacion1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.miniconteiner-puntuacion2 {
+  margin-top: 22px;
+  display: flex;
+  margin-right: 125px;
+}
+
+.puntuacion1 {
+  background-color: #bbb6ff;
+  border: 2px solid #33027d;
+  border-radius: 10px;
+  width: 185px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puntuacion2 {
+  background-color: #bbb6ff;
+  border: 2px solid #33027d;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puntuacion3 {
+  background-color: #bbb6ff;
+  border: 2px solid #33027d;
+  border-radius: 10px;
+  width: 185px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.puntuaciontxt {
+  font-size: 22px;
+}
+
+.input-experiencia {
+  width: 315px;
+  height: 50px;
+  font-size: 15px;
+  border: 1px solid #3d1677;
+}
+
+.enviar-calificacion-btn {
+  background-color: #33027d;
+  border: none;
+  border-radius: 10px;
+  height: 55px;
+  width: 255px;
+  margin-top: 30px;
+  font-family: "Itim", cursive;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.puntuacion1.selected,
+.puntuacion2.selected,
+.puntuacion3.selected {
+  background-color: #33027d !important;
+  border-color: #33027d !important;
+}
+
+.puntuacion1.selected .puntuaciontxt,
+.puntuacion2.selected .puntuaciontxt,
+.puntuacion3.selected .puntuaciontxt {
+  color: white !important;
+}
+
+.puntuacion1:hover,
+.puntuacion2:hover,
+.puntuacion3:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.seccion-estrellas img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+.estrella-icon:hover {
+  transform: scale(1.1);
+}
+
+.cuadro-cliente span {
+  background-color: #bbb6ff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}

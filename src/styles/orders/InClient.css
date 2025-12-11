@@ -1,0 +1,28 @@
+.in-client {
+  min-height: calc(100vh - 180px);
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.title-instructions {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+.section-advice {
+  background-color: #bbb6ff;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.section-advice div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.client-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}

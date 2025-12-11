@@ -1,0 +1,136 @@
+.user-levels-container {
+  /* padding-top: 40px; */
+  width: 100%;
+}
+
+.levels-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-user-levels {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+.levels-title {
+  color: #fff;
+  font-weight: 400;
+  font-size: 30px;
+}
+.tab-levels {
+  background-color: #54299f;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.tab-levels button {
+  font-size: 14px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #54299f;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.tab-levels button.active {
+  background-color: #ffd17d;
+  color: #33027d;
+  font-weight: 700;
+}
+.levels-info-box {
+  width: 90%;
+
+  background-color: #fff;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  padding: 20px 25px;
+  color: #bbb6ff;
+  box-sizing: border-box;
+}
+
+.levels-info-box.now {
+  color: #000;
+}
+.levels-info-box.now .level-item span {
+  color: #f59031;
+}
+
+.levels-info-box.future {
+  color: #54299f;
+}
+.levels-info-box.completed {
+  color: #bbb6ff;
+}
+.levels-divider {
+  width: 90%;
+  height: 2px;
+  background-color: #ffde84;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.level-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  /* color: #fff; */
+}
+
+.level-item span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.level-item p {
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.level-item-active {
+  color: #000;
+}
+
+.level-section-title {
+  display: inline-block;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.button-completed {
+  background-color: #3117cb;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+
+  border: none;
+}
+.button-now {
+  background-color: #f59031;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+}
+.button-future {
+  background-color: #3c0b64;
+  color: #aa7bfc;
+  width: 80%;
+  font-size: 20px;
+  padding: 20px;
+
+  border-radius: 30px;
+  border: none;
+  margin-bottom: 30px;
+}
