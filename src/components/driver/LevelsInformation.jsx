@@ -11,7 +11,7 @@ export function LevelsInformation({ level }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/data-levels.json");
+        const response = await fetch("/data/data-levels.json");
         if (!response.ok) {
           alert("no se encontró el archivo");
         }

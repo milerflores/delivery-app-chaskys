@@ -1,0 +1,56 @@
+{
+  "success": true,
+  "data": {
+    "basico": {
+      "name": "Chaskys Básico",
+      "requisitos": [
+        "Registro completo y validado en la app",
+        "Primeras 10 entregas realizadas",
+        "Tasa de llegada a tiempo ≥ 80%",
+        "Calificación promedio ≥ 4.3 / 5"
+      ],
+      "beneficios": [
+        "Acceso a todos los pedidos disponibles cercanos",
+        "Tarifas estándar",
+        "Metas semanales básicas"
+      ]
+    },
+
+    "silver": {
+      "name": "Chaskys Silver",
+      "requisitos": [
+        "Mínimo 500 entregas completadas",
+        "Tasa de puntualidad ≥ 90%",
+        "Calificación promedio ≥ 4.6 / 5",
+        "Cancelaciones menores al 5%",
+        "4 semanas consecutivas activas (mínimo 10 pedidos por semana)"
+      ],
+      "beneficios": [
+        "Prioridad media para tomar pedidos",
+        "Bonos por metas semanales (ej. +5% por completar 50 pedidos)",
+        "Notificaciones anticipadas de pedidos con mayor tarifa",
+        "Acceso anticipado a mejoras o nuevas funciones de la app",
+        "Soporte preferencial 24/7"
+      ]
+    },
+
+    "black": {
+      "name": "Chaskys Black",
+      "requisitos": [
+        "Mínimo 500 entregas completadas",
+        "Tasa de puntualidad ≥ 95% ",
+        "Calificación promedio ≥ 4.8 / 5 ",
+        "Cancelaciones menores al 2% ",
+        "Sin reportes por mala conducta en los últimos 3 meses",
+        "Actividad constante: mínimo 15 pedidos por semana por al menos 8 semanas"
+      ],
+      "beneficios": [
+        "Prioridad alta para seleccionar pedidos",
+        "Acceso a pedidos premium (empresas, pedidos grandes, largas distancias)",
+        "Bonos exclusivos (+10% por ciertos objetivos)",
+        "Acceso anticipado a mejoras o nuevas funciones de la app",
+        "Distintivo especial visible a clientes y empresas"
+      ]
+    }
+  }
+}
