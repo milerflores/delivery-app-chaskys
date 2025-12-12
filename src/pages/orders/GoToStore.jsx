@@ -9,6 +9,7 @@ import { MapButton } from "../../components/orders/mapButton";
 import { Map } from "../../components/shared/Map";
 import { MapModal } from "../../components/shared/mapModal";
 import { OrderConfirmationToast } from "../../components/orders/orderConfirmationToast";
+import { Support } from "../../components/shared/support";
 import { useDriver } from "../../context/DriverContext";
 import "../../styles/orders/GoToStore.css";
 
@@ -70,6 +71,7 @@ export function GoToStore() {
           <span>Instrucciones</span>
           <span>{confirmedOrder.instructions.store}</span>
         </div>
+        <Support />
         <SwipeButton text={"Ir a la tienda"} onSlide={handleRedirectInStore} />
       </div>
 

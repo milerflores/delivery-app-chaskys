@@ -12,7 +12,7 @@ export function UserLevels() {
         <LogoChaskys descripcion={"Delivery App"} conmotorizado={false} />
       </div>
       <div className="levels-container">
-        <UserLevelsBadge level={"Chasky Silver"} />
+        <UserLevelsBadge level={"Chaskys Silver"} />
         <LevelsInformation level={"silver"} />
       </div>
     </div>

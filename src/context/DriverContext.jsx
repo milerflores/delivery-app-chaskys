@@ -33,23 +33,6 @@ export function DriverStates({ children }) {
     fetchAvailableOrders();
   }, []);
 
-  // async function fetchAvailableOrders() {
-  //   setIsLoadingOrders(true);
-  //   try {
-  //     const response = await fetch("/data.json");
-  //     if (!response.ok) {
-  //       throw new Error("No se encontró el archivo");
-  //     }
-  //     const { data } = await response.json();
-  //     setAvailableOrders(data);
-  //   } catch (error) {
-  //     console.error("Error al cargar órdenes:", error);
-  //     alert("Error al cargar pedidos disponibles");
-  //   } finally {
-  //     setIsLoadingOrders(false);
-  //   }
-  // }
-
   async function fetchAvailableOrders() {
     setIsLoadingOrders(true);
 

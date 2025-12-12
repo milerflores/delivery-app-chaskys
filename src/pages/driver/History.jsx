@@ -3,7 +3,6 @@ import { HeaderVolver } from "../../components/shared/HeaderVolver";
 import { HeaderHome } from "../../components/home/Header";
 import { RecordHistory } from "../../components/history/RecordHistory";
 import { HistoryOrders } from "../../components/history/HistoryOrders";
-import { getOrders } from "../../services/ordersService";
 import { getHistoryOrders } from "../../services/firebaseOrdres";
 import "../../styles/driver/History.css";
 

@@ -21,6 +21,10 @@
   box-sizing: border-box;
 }
 
+.form-body input::placeholder {
+  color: #9a9a9a;
+}
+
 .accion-register {
   height: 180px;
   border-radius: 60px 60px 0px 0px;
@@ -33,11 +37,10 @@
   padding-bottom: 50px;
 }
 
-/* CONTENEDOR PARA TEXTO + BOTÓN EN LÍNEA */
 .login-container {
   display: flex;
   align-items: center;
-  gap: 8px; /* Espacio entre texto y enlace */
+  gap: 8px;
   justify-content: center;
   margin-top: 5px;
 }
@@ -46,7 +49,7 @@
   color: #fff;
   font-size: 25px;
   font-weight: 200;
-  margin: 0; /* Elimina márgenes por defecto */
+  margin: 0;
 }
 
 .accion-register .btn-siguiente {
@@ -78,12 +81,12 @@
   color: #3191e4;
   text-decoration: underline;
   font-family: "Itim", cursive;
-  font-size: 25px; /* Mismo tamaño que el texto */
+  font-size: 25px;
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-  display: inline; /* Para que esté en línea */
+  display: inline;
 }
 
 .login-link {

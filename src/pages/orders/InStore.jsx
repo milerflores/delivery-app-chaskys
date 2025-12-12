@@ -48,7 +48,12 @@ export const InStore = () => {
         <p className="pickup-order">Retira el pedido</p>
         <div className="order-id-name">
           <span>
-            <Icon icon="mynaui:box" width="40" height="40" />
+            <Icon
+              icon="streamline-freehand:products-shopping-bags"
+              width="40"
+              height="40"
+              color="#33027D"
+            />
           </span>
           <div className="section-client-order">
             <span>ID pedido: {confirmedOrder.code}</span>
@@ -64,7 +69,12 @@ export const InStore = () => {
           </ol>
         </div>
         <div className="confirm-button-container">
-          <button className="button-confirm" onClick={handleConfirm}>
+          <button
+            className={`button-confirm ${
+              isSwipeEnabled ? "button-confirmed" : ""
+            }`}
+            onClick={handleConfirm}
+          >
             Tengo el pedido
           </button>
         </div>

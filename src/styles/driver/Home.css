@@ -3,7 +3,6 @@
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 30px;
-
   padding: 19px 24px 10px 24px;
 }
 
@@ -109,12 +108,6 @@
   font-family: "Itim", cursive;
 }
 
-/* .order-home-title {
-  display: flex;
-  justify-content: center;
-  
-} */
-
 .order-home-title {
   display: flex;
   flex-direction: column;
@@ -132,7 +125,7 @@
 .card-order {
   background-color: #dfdfdf;
   border-radius: 16px;
-  padding: 7px 14px;
+  padding: 7px 14px 13px;
   margin-bottom: 15px;
   font-family: "Itim", cursive;
 }
@@ -145,7 +138,8 @@
 
 .tarjeta-efectivo {
   display: flex;
-  gap: 5px;
+  gap: 4px;
+  margin-left: 30px;
 }
 
 .card-order-name-summary {
@@ -159,7 +153,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 8px;
+  gap: 5px;
   color: #5b5b5b;
 }
 
@@ -175,4 +169,14 @@
 }
 .subtitle-orders {
   color: #33027d;
+}
+
+.distancia-km {
+  display: flex;
+  flex-direction: column;
+  /* align-items: end; */
+}
+
+.distancia-km span {
+  margin-left: 30px;
 }

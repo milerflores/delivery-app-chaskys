@@ -23,7 +23,7 @@ export const HeaderHome = ({ variant }) => {
           className="header-user-category color-orange"
           onClick={handlerRedirectLevels}
         >
-          Chasky Silver
+          Chaskys Silver
         </span>
       </div>
 

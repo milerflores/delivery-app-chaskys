@@ -49,8 +49,11 @@ export const GoToClient = () => {
         <StoreAddress
           address={confirmedOrder.address.destination}
           name={confirmedOrder.client}
+          iconHouse={"house"}
         />
-        <ClientContactButtons />
+        <div className="buttons-to-client">
+          <ClientContactButtons />
+        </div>
         <MapButton onClick={() => setIsMapOpen(true)} />
         <div className="map-preview">
           <Map

@@ -6,3 +6,9 @@
   margin-top: 30px;
   width: 100%;
 }
+
+.icon-plus-word {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

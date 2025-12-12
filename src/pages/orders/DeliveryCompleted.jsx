@@ -12,7 +12,7 @@ export const DeliveryCompleted = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate("/rating");
-    }, 3000);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, [navigate]);
@@ -32,11 +32,10 @@ export const DeliveryCompleted = () => {
           </p>
 
           <div className="reloj-wrapper">
-            <Icon
-              icon="mdi:clock-time-eight-outline"
-              width="70"
-              height="70"
-              className="spin-icon"
+            <img
+              src="/src/assets/sand-clock.gif"
+              alt="Cargando..."
+              className="reloj-gif"
             />
           </div>
         </div>

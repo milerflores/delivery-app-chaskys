@@ -45,9 +45,8 @@ export const Order = ({
       <div className="card-order-details">
         <span>{address.origin}</span>
 
-        <div>
-          <span>Distancia: </span>
-          <span>{km}km</span>
+        <div className="distancia-km">
+          <span>Distancia: {km}km </span>
         </div>
 
         <span>{address.destination}</span>

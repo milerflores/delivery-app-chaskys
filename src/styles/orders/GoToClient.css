@@ -24,3 +24,10 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
+.buttons-to-client {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 10px auto;
+}

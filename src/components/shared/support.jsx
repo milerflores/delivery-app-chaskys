@@ -11,10 +11,12 @@ export const Support = () => {
   return (
     <>
       <div className="section-support" onClick={() => setOpen(true)}>
-        <span>
-          <Icon icon="ix:support" width="30" height="30" />
-        </span>
-        <span>Soporte</span>
+        <div>
+          <span className="icon-plus-word">
+            <Icon icon="ix:support" width="30" height="30" />
+          </span>
+          <span>Soporte</span>
+        </div>
       </div>
 
       <SupportModal open={open} onClose={() => setOpen(false)} />

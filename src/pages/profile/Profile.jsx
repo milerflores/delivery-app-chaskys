@@ -110,7 +110,10 @@ export const Profile = () => {
               )}
             </div>
             <label className="profile-change-photo-btn">
-              cambiar foto
+              <div>
+                <span>cambiar foto</span>
+                <Icon icon="mdi:camera" width="18" height="18" />
+              </div>
               <input
                 type="file"
                 accept="image/*"

@@ -29,7 +29,7 @@
   border: none;
   width: 100%;
   box-sizing: border-box;
-  background: rgba(255, 255, 255, 0.9);
+  color: #9a9a9a;
 }
 
 .section-title {
@@ -149,6 +149,7 @@
   gap: 20px;
   padding: 30px 40px 40px;
   margin-top: 15px;
+  margin-bottom: 30px;
 }
 
 .btn-crear-cuenta-final {
@@ -261,14 +262,22 @@ body {
 }
 
 .title-h1 {
-  color: #c8a758;
+  color: #ffd27d;
   font-family: "Itim", cursive;
   font-size: 64px;
   margin: 0px;
+  font-weight: 500;
 }
 
 .subtitle {
   font-size: 36px;
   font-family: "Itim", cursive;
   color: #ffffff;
+}
+.input-group input::placeholder {
+  color: #9a9a9a;
+}
+
+.login-container span {
+  font-size: 20px;
 }

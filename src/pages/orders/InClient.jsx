@@ -52,6 +52,7 @@ export const InClient = () => {
           address={confirmedOrder.address.destination}
           instructions={confirmedOrder.instructions.client}
           showInstructions={true}
+          iconHouse={"house"}
         />
         <div className="client-button">
           <ClientContactButtons />

@@ -17,37 +17,10 @@ export const Activation = () => {
     {};
   const userEmail = userData.email || "correo@gmail.com";
 
-  const checkIconPath = "/activation/CheckIcon.svg";
-
-  const sobreIconPath = "/activation/Sobre.svg";
-
   useEffect(() => {
     const complete = code.every((digit) => digit !== "") && code.length === 4;
     setIsCodeComplete(complete);
   }, [code]);
-
-  useEffect(() => {
-    if (showSuccessModal) {
-      console.log("=== VERIFICANDO SVG ===");
-      console.log("Ruta SVG:", checkIconPath);
-      console.log("URL completa:", window.location.origin + checkIconPath);
-
-      fetch(checkIconPath)
-        .then((res) => {
-          console.log("Status SVG:", res.status);
-          if (res.ok) {
-            console.log("✅ SVG encontrado correctamente");
-          } else {
-            console.error("❌ SVG NO encontrado");
-            console.log(
-              "Probando ruta:",
-              process.env.PUBLIC_URL + checkIconPath
-            );
-          }
-        })
-        .catch((err) => console.error("Error fetch SVG:", err));
-    }
-  }, [showSuccessModal]);
 
   const handleChange = (index, value) => {
     if (value.length <= 1 && /^\d*$/.test(value)) {
@@ -99,40 +72,6 @@ export const Activation = () => {
     if (e.target.classList.contains("modal-overlay")) {
       closeModal();
     }
-  };
-
-  const handleSvgError = (e) => {
-    console.error("❌ ERROR cargando SVG desde:", checkIconPath);
-    console.log("Elemento img:", e.target);
-
-    e.target.style.display = "none";
-    const parent = e.target.parentElement;
-
-    const fallbackSvg = document.createElementNS(
-      "http://www.w3.org/2000/svg",
-      "svg"
-    );
-    fallbackSvg.setAttribute("class", "check-fallback");
-    fallbackSvg.setAttribute("viewBox", "0 0 24 24");
-    fallbackSvg.setAttribute("fill", "none");
-    fallbackSvg.setAttribute("xmlns", "http://www.w3.org/2000/svg");
-
-    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M20 6L9 17L4 12");
-    path.setAttribute("stroke", "#33027D");
-    path.setAttribute("stroke-width", "3");
-    path.setAttribute("stroke-linecap", "round");
-    path.setAttribute("stroke-linejoin", "round");
-
-    fallbackSvg.appendChild(path);
-    parent.appendChild(fallbackSvg);
-
-    console.log("✅ Mostrando fallback SVG");
-  };
-
-  const handleSvgLoad = () => {
-    console.log("✅ SVG cargado exitosamente");
-    setSvgLoaded(true);
   };
 
   return (
@@ -209,38 +148,18 @@ export const Activation = () => {
                 <span className="exclamation">!</span>
               </h2>
 
-              <p className="modal-message">
+              <p className="modal-message-activation">
                 Tu cuenta fue activada exitosamente.
               </p>
             </div>
 
             <div className="modal-center-section">
               <div className="success-icon">
-                <img
-                  src={checkIconPath}
-                  alt="Check"
-                  className="check-image"
-                  onError={handleSvgError}
-                  onLoad={handleSvgLoad}
-                  style={{ display: svgLoaded ? "block" : "none" }}
+                <Icon
+                  icon="lets-icons:check-ring-round"
+                  width="120"
+                  height="120"
                 />
-
-                {!svgLoaded && (
-                  <svg
-                    className="check-fallback"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M20 6L9 17L4 12"
-                      stroke="#33027D"
-                      strokeWidth="3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                )}
               </div>
             </div>
 
